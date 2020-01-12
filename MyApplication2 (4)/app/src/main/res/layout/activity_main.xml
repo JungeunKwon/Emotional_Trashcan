@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+    <include layout="@layout/top_toolbar"
+    android:id="@+id/main_activity_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/main_activity_layoutoneline"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/main_activit_btndiary"
+                android:layout_width="60dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:background="@drawable/btndiary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/multi_diary" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/main_activity_layouttrash"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/main_activit_btntrash"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/btntrash"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/multi_trashcan" />
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+        <LinearLayout
+
+            android:id="@+id/main_activity_layoutMood"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/main_activit_btnMood"
+                android:layout_width="60dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:background="@drawable/btnmood" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/multi_Moodchart" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:id="@+id/main_activity_layoutTodo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/main_activit_btnTodo"
+                android:layout_width="60dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:background="@drawable/btntodo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/multi_TodoList" />
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+
+                android:id="@+id/main_activity_layoutgoal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/main_activit_btngoal"
+                    android:layout_width="60dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btngoal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/multi_GoalPlanner" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/bottom_toolbar"
+        android:id="@+id/main_activity_bottom"/>
+</LinearLayout>

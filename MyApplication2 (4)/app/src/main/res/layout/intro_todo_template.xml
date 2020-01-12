@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intro_todo_template"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/intro_todo_top"
+        layout="@layout/top_toolbar"
+        android:visibility="invisible" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro_todo_top"
+        android:id="@+id/intro_todo_add"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/arrow_down" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro_todo_add"
+        android:id="@+id/intro_todo_add_text"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:gravity="end"
+        android:text ="@string/multi_coach_marks_todo_pin"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/intro_todo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro_todo_top"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/multi_coach_marks_todo_heart"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/intro_todo_info"
+        android:layout_centerVertical="true"
+        android:background="@drawable/info_todo" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/intro_todo_btngotit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="75dp"
+        android:text="@string/multi_coach_marks_todo_date"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/text_todo_View"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/todo_imageView"
+        android:layout_alignEnd="@+id/todo_imageView"
+        android:text="@string/multi_coach_marks_write"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/todo_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/intro_todo_bottom_toolbar"
+        android:layout_alignEnd="@+id/intro_todo_btngotit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/arrow_up" />
+
+    <ImageButton
+        android:id="@+id/intro_todo_btngotit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/intro_todo_bottom_toolbar"
+        android:background="@drawable/heartbutton" />
+    <include layout="@layout/bottom_toolbar"
+        android:id="@+id/intro_todo_bottom_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        />
+</RelativeLayout>
