@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_menu_write_camera_camera"
+        android:icon="@drawable/camera1"
+        android:title="camera"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bottom_menu_write_camera_write"
+        android:icon="@drawable/edit_2"
+        android:title="write"
+        android:showAsAction="ifRoom" />
+
+</menu>
